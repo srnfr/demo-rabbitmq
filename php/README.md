@@ -1,4 +1,4 @@
-# PHP code for RabbitMQ tutorials
+# PHP code for RabbitMQ tutorials, slightly modified.
 
 Here you can find PHP code examples from [RabbitMQ
 tutorials](https://www.rabbitmq.com/getstarted.html).
@@ -12,26 +12,11 @@ To successfully use the examples you will need a running RabbitMQ server.
 You need `PHP 7.0` and `php-amqplib`. To get these
 dependencies on Ubuntu type:
 
-    sudo apt-get install git-core php5-cli
+    sudo apt-get install -y git-core php-cli php-amqplib php-mbstring php-curl 
 
-
-### Composer
-
-Then [install Composer](https://getcomposer.org/download/) per instructions on their site.
-
-
-### Client Library
-
-Then you can install `php-amqplib` using [Composer](https://getcomposer.org).
-
-To do that install Composer and add it to your path, then run the following command
-inside this project folder:
-
-    composer.phar install
-    
-Or you can require it to the existing project using a command:
-
-    composer.phar require php-amqplib/php-amqplib
+### RabbitMQ Server
+You can start one (on a free tier plan) at [CloudAMQP](https://cloudamqp.com)
+Modify the `config.ini file` as needed.
 
 ## Code
 
