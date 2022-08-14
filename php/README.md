@@ -16,7 +16,7 @@ dependencies on Ubuntu type:
 
 ### RabbitMQ Server
 You can start one (on a free tier plan) at [CloudAMQP](https://cloudamqp.com)
-Modify the `config.ini file` as needed.
+Modify the `config.ini` file as needed.
 
 ## Code
 
