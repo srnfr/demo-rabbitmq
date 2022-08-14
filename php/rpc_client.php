@@ -14,7 +14,7 @@ class FibonacciRpcClient
 
     public function __construct()
     {
-        $this->connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
+        $this->connection = new AMQPStreamConnection($ini['server'], $ini['port'], $ini['username'], $ini['password'], $ini['vhost']);
         $this->channel = $this->connection->channel();
         list($this->callback_queue, ,) = $this->channel->queue_declare(
             "",
