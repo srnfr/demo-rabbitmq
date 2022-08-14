@@ -1,4 +1,5 @@
-# PHP code for RabbitMQ tutorials, slightly modified.
+# PHP code for RabbitMQ tutorials
+## (slightly modified).
 
 Here you can find PHP code examples from [RabbitMQ
 tutorials](https://www.rabbitmq.com/getstarted.html).
