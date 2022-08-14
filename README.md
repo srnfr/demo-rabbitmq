@@ -1,4 +1,5 @@
 # RabbitMQ Tutorials
+## This fork is intented to modify the PHP tutorial
 
 This project contains code for [RabbitMQ tutorials](https://www.rabbitmq.com/getstarted.html) with
 their ports to various languages.
