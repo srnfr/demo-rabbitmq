@@ -8,16 +8,18 @@ To successfully use the examples you will need a running RabbitMQ server.
 
 ## Requirements
 
-### PHP 7.0+
+### PHP 7.0+ (tested on PHP 8.1 on Ubuntu20.04 
 
 You need `PHP 7.0` and `php-amqplib`. To get these
 dependencies on Ubuntu type:
 
-    sudo apt-get install -y git-core php-cli php-amqplib php-mbstring php-curl 
+    sudo apt-get install -y git-core php-cli php-amqplib php-mbstring php-curl composer
+    
+    composer install
 
 ### RabbitMQ Server
 You can start one (on a free tier plan) at [CloudAMQP](https://cloudamqp.com)
-Modify the `config.ini` file as needed.
+Modify the `config.ini` file as needed (creds + host/vhost)
 
 ## Code
 
