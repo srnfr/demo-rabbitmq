@@ -11,7 +11,7 @@ $channel = $connection->channel();
 
 $channel->queue_declare('hello', false, false, false, false);
 
-for ($i = 0; $i < 10; $i++) {
+for ($i = 1; $i < 11; $i++) {
     $txt= "Hello World! $i";
     $msg = new AMQPMessage($txt);
     $channel->basic_publish($msg, '', 'hello');
