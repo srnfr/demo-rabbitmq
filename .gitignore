@@ -33,3 +33,4 @@ target/
 *.log
 .packages
 .python-version
+php/config.ini
