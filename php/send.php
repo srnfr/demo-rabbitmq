@@ -11,10 +11,12 @@ $channel = $connection->channel();
 
 $channel->queue_declare('hello', false, false, false, false);
 
-$msg = new AMQPMessage('Hello World!');
-$channel->basic_publish($msg, '', 'hello');
-
-echo " [x] Sent 'Hello World!'\n";
+for ($i = 0; $i < 10; $i++) {
+    $txt= "Hello World! $i";
+    $msg = new AMQPMessage($txt);
+    $channel->basic_publish($msg, '', 'hello');
+    echo " [x] Sent $txt \n";
+}
 
 $channel->close();
 $connection->close();
